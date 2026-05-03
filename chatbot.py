@@ -5,77 +5,97 @@ import random
 import re
 import numpy as np
 
-import pandas as pd
-
 data = pd.read_csv("ai_chatbot.csv")
 
-data["message"] = data["message"].str.lower().str.strip()
+def clean(text):
+    text = text.lower().strip()
+    text = re.sub(r"[^a-z0-9 ]", "", text)
+    return text
+
+data["message"] = data["message"].apply(clean)
 
 X = data["message"]
 Y = data["intent"]
 
-vectorizer = TfidfVectorizer(ngram_range=(1, 2))
+vectorizer = TfidfVectorizer(ngram_range=(1, 2), min_df=1)
 X_vec = vectorizer.fit_transform(X)
 
-model = LogisticRegression(max_iter=300)
+model = LogisticRegression(max_iter=1000)
 model.fit(X_vec, Y)
 
 response_dict = {}
 
 for _, row in data.iterrows():
-    intent = row["intent"]
-    response = row["response"]
+    response_dict.setdefault(row["intent"], []).append(row["response"])
 
-    if intent not in response_dict:
-        response_dict[intent] = []
+intent_keywords = {
+    "pricing": ["price", "pricing", "cost", "plan", "subscription", "fee"],
+    "services": ["service", "offer", "provide", "web", "app"],
+    "ai_info": ["ai", "machine learning", "automation", "ml"],
+    "about": ["who", "what is", "about", "company", "software house"],
+    "greeting": ["hi", "hello", "hey", "good morning", "good evening"],
+    "goodbye": ["bye", "exit", "see you", "goodbye"],
+    "support": ["support", "help", "error", "bug", "issue"],
+    "security": ["safe", "security", "privacy", "data"],
+    "automation": ["automation", "workflow", "connect", "task"],
+    "contact": ["contact", "info", "email", "number"]
+}
 
-    response_dict[intent].append(response)
+def clean_input(text):
+    return clean(text)
 
-print("🤖 Chatbot trained successfully!")
+def detect_keywords(text):
+    found = []
+    for intent, keys in intent_keywords.items():
+        for k in keys:
+            if k in text:
+                found.append(intent)
+                break
+    return found
 
-def is_valid_input(text_vec):
-    return text_vec.sum() > 0.2
+def predict(text):
+    text = clean_input(text)
+    vec = vectorizer.transform([text])
 
-def get_reply(text):
-    input_vec = vectorizer.transform([text])
+    probs = model.predict_proba(vec)[0]
+    top_idx = np.argsort(probs)[::-1]
 
-    if not is_valid_input(input_vec):
-        return None, 0.0, None
+    intents = []
+    for i in top_idx[:3]:
+        if probs[i] > 0.20:
+            intents.append((model.classes_[i], probs[i]))
 
-    probs = model.predict_proba(input_vec)
-    confidence = max(probs[0])
-    intent = model.classes_[probs.argmax()]
+    keyword_intents = detect_keywords(text)
 
-    reply = random.choice(response_dict[intent])
+    final_intents = []
 
-    return reply, confidence, intent
+    for i, c in intents:
+        final_intents.append(i)
 
+    for ki in keyword_intents:
+        if ki not in final_intents:
+            final_intents.append(ki)
 
-def chatbot():
-    print("\n🤖 AI Chatbot Ready (type exit to stop)\n")
+    if not final_intents:
+        return "Sorry, I didn't understand that.", 0.0
 
-    while True:
-        user_input = input("You: ").lower().strip()
+    replies = []
+    best_conf = 0
 
-        if user_input == "exit":
-            print("Bot: Goodbye! 👋")
-            break
+    for intent in final_intents:
+        if intent in response_dict:
+            replies.append(random.choice(response_dict[intent]))
+            best_conf = max(best_conf, max(probs))
 
-        parts = re.split(r"[?.!]| and ", user_input)
+    return " | ".join(replies), best_conf
 
-        for part in parts:
-            part = part.strip()
+while True:
+    user = input("You: ")
 
-            if not part:
-                continue
+    if user.lower().strip() == "exit":
+        print("Bot: Goodbye!")
+        break
 
-            reply, confidence, intent = get_reply(part)
+    reply, conf = predict(user)
 
-            # 🔥 FINAL FIX LOGIC
-            if reply is None or confidence < 0.10:
-                print("Bot: I didn’t understand that. Please ask something related to Butt Networks services.")
-            else:
-                print("Bot:", reply)
-
-
-chatbot()
+    print("Bot:", reply, "(confidence:", round(conf, 2), ")") 
