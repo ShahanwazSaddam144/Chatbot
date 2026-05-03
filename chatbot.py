@@ -84,21 +84,32 @@ def predict(text):
     for i in top_idx[:3]:
         if probs[i] > 0.20:
             intents.append((model.classes_[i], probs[i]))
+
     keyword_intents = detect_keywords(text)
+
     final_intents = []
+    final_probs = []
+
     for i, c in intents:
         final_intents.append(i)
+        final_probs.append(c)
+
     for ki in keyword_intents:
         if ki not in final_intents:
             final_intents.append(ki)
+            final_probs.append(0.60)
+
     if not final_intents:
         return "Sorry, I didn't understand that.", 0.0
+
     replies = []
     best_conf = 0
-    for intent in final_intents:
+
+    for intent, conf in zip(final_intents, final_probs):
         if intent in response_dict:
             replies.append(random.choice(response_dict[intent]))
-            best_conf = max(best_conf, max(probs))
+            best_conf = max(best_conf, conf)
+
     return " | ".join(replies), best_conf
 
 class Request(BaseModel):
