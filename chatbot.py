@@ -1,9 +1,13 @@
+from fastapi import FastAPI
+from pydantic import BaseModel
 from sklearn.linear_model import LogisticRegression
 from sklearn.feature_extraction.text import TfidfVectorizer
 import pandas as pd
 import random
 import re
 import numpy as np
+
+app = FastAPI()
 
 data = pd.read_csv("ai_chatbot.csv")
 
@@ -56,46 +60,33 @@ def detect_keywords(text):
 def predict(text):
     text = clean_input(text)
     vec = vectorizer.transform([text])
-
     probs = model.predict_proba(vec)[0]
     top_idx = np.argsort(probs)[::-1]
-
     intents = []
     for i in top_idx[:3]:
         if probs[i] > 0.20:
             intents.append((model.classes_[i], probs[i]))
-
     keyword_intents = detect_keywords(text)
-
     final_intents = []
-
     for i, c in intents:
         final_intents.append(i)
-
     for ki in keyword_intents:
         if ki not in final_intents:
             final_intents.append(ki)
-
     if not final_intents:
         return "Sorry, I didn't understand that.", 0.0
-
     replies = []
     best_conf = 0
-
     for intent in final_intents:
         if intent in response_dict:
             replies.append(random.choice(response_dict[intent]))
             best_conf = max(best_conf, max(probs))
-
     return " | ".join(replies), best_conf
 
-while True:
-    user = input("You: ")
+class Request(BaseModel):
+    message: str
 
-    if user.lower().strip() == "exit":
-        print("Bot: Goodbye!")
-        break
-
-    reply, conf = predict(user)
-
-    print("Bot:", reply, "(confidence:", round(conf, 2), ")") 
+@app.post("/chat")
+def chat(req: Request):
+    reply, conf = predict(req.message)
+    return {"response": reply, "confidence": round(conf, 2)}
