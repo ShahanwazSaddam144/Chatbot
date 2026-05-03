@@ -6,8 +6,26 @@ import pandas as pd
 import random
 import re
 import numpy as np
+from fastapi.middleware.cors import CORSMiddleware
+import time
 
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+@app.middleware("http")
+async def log_requests(request, call_next):
+    start_time = time.time()
+    response = await call_next(request)
+    process_time = time.time() - start_time
+    print(f"{request.method} {request.url.path} - {process_time:.4f}s")
+    return response
 
 data = pd.read_csv("ai_chatbot.csv")
 
