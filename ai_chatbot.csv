@@ -1,0 +1,84 @@
+message,intent,response
+hello,greeting,"Hello! 👋 Welcome to Butt Networks AI Automation Platform. How can I assist you today?"
+hi,greeting,"Hi there! Ready to automate your work with AI?"
+hey,greeting,"Hey! Need help with AI automation?"
+
+what is butt networks,about,"Butt Networks is an AI-powered SaaS platform that helps businesses automate tasks using machine learning and workflows."
+tell me about your platform,about,"We provide AI automation tools, chatbots, and smart workflows to optimize business processes."
+what do you do,about,"We build AI systems that automate repetitive tasks and improve productivity."
+
+what is ai automation,ai_info,"AI automation uses machine learning to perform tasks without human intervention."
+how does automation work,ai_info,"Our system uses AI models and workflows to automate tasks like support, marketing, and data processing."
+what is machine learning,ai_info,"Machine learning allows systems to learn from data and improve automatically."
+
+services,services,"We offer AI automation, chatbot development, workflow automation, and predictive analytics."
+what services do you offer,services,"We provide AI bots, automation pipelines, APIs, and analytics tools."
+ai services,services,"We build intelligent AI systems for automation and insights."
+
+chatbot features,features,"Our chatbot supports NLP, intent detection, and real-time responses."
+automation features,features,"We offer workflow automation, API integrations, and task scheduling."
+ai features,features,"Features include ML models, predictive analytics, and smart automation."
+
+what can your ai do,capabilities,"Our AI can automate customer support, generate insights, and manage workflows."
+use cases,capabilities,"Use cases include business automation, marketing automation, and customer support bots."
+how can it help my business,capabilities,"Our AI reduces manual work, saves time, and increases efficiency."
+
+workflow automation,automation,"You can automate repetitive tasks using our workflow builder."
+create automation,automation,"You can create automation pipelines easily from the dashboard."
+task automation,automation,"Automate tasks like emails, data entry, and customer replies."
+
+api integration,automation,"We support API integrations with third-party tools."
+connect apps,automation,"You can connect apps like CRMs, websites, and databases."
+
+pricing,pricing,"Our pricing depends on usage and features. Visit our website for plans."
+subscription plans,pricing,"We offer flexible SaaS subscription models."
+free trial,pricing,"Yes, we offer a free trial for new users."
+
+contact,contact,"You can contact us via our platform or website."
+support,support,"Our AI support system is available 24/7."
+technical support,support,"We provide full technical support for all users."
+
+how secure is your platform,security,"We use encryption and secure APIs to protect your data."
+data privacy,security,"Your data is सुरक्षित and handled with strict privacy policies."
+is my data safe,security,"Yes, we follow industry-standard security practices."
+
+how to start,getting_started,"Sign up on our platform and start building automation workflows."
+getting started,getting_started,"Create an account and explore our AI tools dashboard."
+setup ai bot,getting_started,"You can set up your AI chatbot in minutes."
+
+dashboard,product,"Our dashboard lets you manage automations, analytics, and bots."
+analytics,product,"We provide real-time analytics and insights."
+reports,product,"Generate reports from your automation data."
+
+ai chatbot,product,"Our AI chatbot handles conversations using NLP and ML."
+smart assistant,product,"We provide intelligent assistants for business automation."
+
+do you support businesses,clients,"Yes, we support startups, enterprises, and developers."
+enterprise solutions,clients,"We offer scalable enterprise AI solutions."
+small business,clients,"Our tools are perfect for small business automation."
+
+do you use python,technology,"Yes, we use Python for AI models and backend systems."
+tech stack,technology,"Our stack includes Python, Node.js, and AI frameworks."
+which ai models,technology,"We use ML models like NLP, classification, and prediction systems."
+
+can i customize ai,customization,"Yes, you can customize AI workflows and models."
+custom automation,customization,"Build custom automation pipelines easily."
+train my own model,customization,"You can train models using your own data."
+
+performance,performance,"Our AI systems are optimized for speed and accuracy."
+scalability,performance,"Our platform scales with your business needs."
+
+do you provide demos,demo,"Yes, we offer live demos of our AI platform."
+see demo,demo,"Request a demo from our website."
+
+portfolio,portfolio,"Visit our website to see AI projects and case studies."
+case studies,portfolio,"We showcase real-world automation success stories."
+
+do you offer training,training,"Yes, we provide AI and automation training."
+learn ai,training,"We offer tutorials and learning resources."
+
+bug issue,support,"Our support team will resolve your issue quickly."
+error problem,support,"Please report errors via dashboard."
+
+bye,goodbye,"Goodbye! 👋 Hope to see you automate with us soon."
+thank you,thanks,"You're welcome! 😊 Happy automating!"
