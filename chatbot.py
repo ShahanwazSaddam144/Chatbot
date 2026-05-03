@@ -1,43 +1,81 @@
 from sklearn.linear_model import LogisticRegression
 from sklearn.feature_extraction.text import TfidfVectorizer
 import pandas as pd
+import random
+import re
+import numpy as np
 
+import pandas as pd
 
 data = pd.read_csv("ai_chatbot.csv")
 
-# Features & Labels
+data["message"] = data["message"].str.lower().str.strip()
+
 X = data["message"]
 Y = data["intent"]
 
-# Convert text → numbers
-vectorizer = TfidfVectorizer()
-X_vec = vectorizer.fit_transform(X)   
+vectorizer = TfidfVectorizer(ngram_range=(1, 2))
+X_vec = vectorizer.fit_transform(X)
 
-# Train model
-model = LogisticRegression()
+model = LogisticRegression(max_iter=300)
 model.fit(X_vec, Y)
 
 response_dict = {}
+
 for _, row in data.iterrows():
-    response_dict[row["intent"]] = row["response"]
+    intent = row["intent"]
+    response = row["response"]
+
+    if intent not in response_dict:
+        response_dict[intent] = []
+
+    response_dict[intent].append(response)
+
+print("🤖 Chatbot trained successfully!")
+
+def is_valid_input(text_vec):
+    return text_vec.sum() > 0.2
+
+def get_reply(text):
+    input_vec = vectorizer.transform([text])
+
+    if not is_valid_input(input_vec):
+        return None, 0.0, None
+
+    probs = model.predict_proba(input_vec)
+    confidence = max(probs[0])
+    intent = model.classes_[probs.argmax()]
+
+    reply = random.choice(response_dict[intent])
+
+    return reply, confidence, intent
 
 
 def chatbot():
-    print("🤖 AI Powered Chatbot (type 'exit' to end):")
+    print("\n🤖 AI Chatbot Ready (type exit to stop)\n")
 
     while True:
-        user_input = input("You: ")
+        user_input = input("You: ").lower().strip()
 
-        if user_input.lower() == "exit":
-            print("Bot: Goodbye!")
+        if user_input == "exit":
+            print("Bot: Goodbye! 👋")
             break
 
-        input_vec = vectorizer.transform([user_input])
+        parts = re.split(r"[?.!]| and ", user_input)
 
-        intent = model.predict(input_vec)[0]
+        for part in parts:
+            part = part.strip()
 
-        reply = response_dict.get(intent, "Sorry, I don't understand")
+            if not part:
+                continue
 
-        print("Bot:", reply)
+            reply, confidence, intent = get_reply(part)
+
+            # 🔥 FINAL FIX LOGIC
+            if reply is None or confidence < 0.10:
+                print("Bot: I didn’t understand that. Please ask something related to Butt Networks services.")
+            else:
+                print("Bot:", reply)
+
 
 chatbot()
