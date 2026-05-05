@@ -63,6 +63,12 @@ intent_keywords = {
     "contact": ["contact", "info", "email", "number"]
 }
 
+entities = {
+    "butt networks": "butt_networks",
+    "opinion nest": "opinion_nest",
+    "opinion-nest": "opinion_nest"
+}
+
 def clean_input(text):
     return clean(text)
 
@@ -75,42 +81,60 @@ def detect_keywords(text):
                 break
     return found
 
+def extract_entity(text):
+    text = text.lower()
+    for name, entity in entities.items():
+        if name in text:
+            return entity
+    return None
+
 def predict(text):
     text = clean_input(text)
+
+    entity = extract_entity(text)
+
+    if entity:
+        if "what" in text or "tell" in text or "about" in text:
+            intent = f"about_{entity}"
+            if intent in response_dict:
+                return random.choice(response_dict[intent]), 0.95
+
     vec = vectorizer.transform([text])
     probs = model.predict_proba(vec)[0]
     top_idx = np.argsort(probs)[::-1]
-    intents = []
+
+    ml_intents = []
     for i in top_idx[:3]:
-        if probs[i] > 0.20:
-            intents.append((model.classes_[i], probs[i]))
+        if probs[i] > 0.25:
+            ml_intents.append((model.classes_[i], float(probs[i])))
 
     keyword_intents = detect_keywords(text)
 
-    final_intents = []
-    final_probs = []
+    score_map = {}
 
-    for i, c in intents:
-        final_intents.append(i)
-        final_probs.append(c)
+    for intent, score in ml_intents:
+        score_map[intent] = score_map.get(intent, 0) + score
 
     for ki in keyword_intents:
-        if ki not in final_intents:
-            final_intents.append(ki)
-            final_probs.append(0.60)
+        score_map[ki] = score_map.get(ki, 0) + 0.65
 
-    if not final_intents:
-        return "Sorry, I didn't understand that.", 0.0
+    if not score_map:
+        return None, 0.0
+
+    sorted_intents = sorted(score_map.items(), key=lambda x: x[1], reverse=True)
+
+    best_intent, best_score = sorted_intents[0]
 
     replies = []
-    best_conf = 0
 
-    for intent, conf in zip(final_intents, final_probs):
+    for intent, score in sorted_intents[:2]:
         if intent in response_dict:
             replies.append(random.choice(response_dict[intent]))
-            best_conf = max(best_conf, conf)
 
-    return " | ".join(replies), best_conf
+    return " | ".join(replies), best_score
+
+def fallback_response(text):
+    return f"I understand you're asking about '{text}', but I don't have enough specific training data for this. Can you rephrase or provide more details?"
 
 class Request(BaseModel):
     message: str
@@ -118,4 +142,16 @@ class Request(BaseModel):
 @app.post("/chat")
 def chat(req: Request):
     reply, conf = predict(req.message)
-    return {"response": reply, "confidence": round(conf, 2)}
+
+    if reply is None or conf < 0.45:
+        return {
+            "response": fallback_response(req.message),
+            "confidence": round(conf, 2),
+            "mode": "fallback"
+        }
+
+    return {
+        "response": reply,
+        "confidence": round(conf, 2),
+        "mode": "ml"
+    }
