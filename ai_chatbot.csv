@@ -1,522 +1,101 @@
 message,intent,response
-what is butt networks,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-what is ai automation?,ai_info,AI helps automate tasks using machine learning and intelligent systems.
-who are you,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-thanks,thanks,You're welcome! 😊 Happy to help.
-hello?,greeting,Hello! 👋 Welcome to Butt Networks Software House. How can I help you today?
-how does automation work,ai_info,AI helps automate tasks using machine learning and intelligent systems.
-goodbye,goodbye,Goodbye! 👋 Thanks for visiting Butt Networks.
-what is machine learning,ai_info,AI helps automate tasks using machine learning and intelligent systems.
+what is butt networks,about,"Butt Networks is a software house providing AI, web development, automation, and custom software solutions."
+what is opinion nest,about,Opinion Nest is an AI-powered feedback and survey platform by Butt Networks that helps businesses collect and analyze customer opinions in real-time.
+opinion nest features,about,"Opinion Nest provides AI-driven surveys, analytics dashboards, and real-time feedback collection."
+what is ai automation,ai_info,AI helps automate tasks using machine learning and intelligent systems.
+how does automation work,ai_info,AI helps automate tasks by learning patterns and executing tasks automatically.
+what is machine learning,ai_info,Machine learning enables systems to learn from data and improve over time.
 hi,greeting,Hello! 👋 Welcome to Butt Networks Software House. How can I help you today?
-subscription plans?,pricing,Our pricing depends on project requirements. Contact us for details.
-what is machine learning,ai_info,AI helps automate tasks using machine learning and intelligent systems.
-about your software house,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-subscription plans,pricing,Our pricing depends on project requirements. Contact us for details.
-how are you,greeting,Hello! 👋 Welcome to Butt Networks Software House. How can I help you today?
-bye,goodbye,Goodbye! 👋 Thanks for visiting Butt Networks.
-who are you,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-thanks?,thanks,You're welcome! 😊 Happy to help.
-what is butt networks?,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-workflow automation?,automation,We build automation systems to reduce manual work and improve efficiency.
-about your software house,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-is my data safe,security,We use secure systems and encryption to protect your data.
-ai services,services,"We offer web apps, AI systems, automation tools, and mobile app development."
-how does automation work,ai_info,AI helps automate tasks using machine learning and intelligent systems.
-who are you?,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-goodbye?,goodbye,Goodbye! 👋 Thanks for visiting Butt Networks.
-data privacy,security,We use secure systems and encryption to protect your data.
-goodbye,goodbye,Goodbye! 👋 Thanks for visiting Butt Networks.
-hi,greeting,Hello! 👋 Welcome to Butt Networks Software House. How can I help you today?
-subscription plans,pricing,Our pricing depends on project requirements. Contact us for details.
-tell me about company,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-how does automation work,ai_info,AI helps automate tasks using machine learning and intelligent systems.
-error problem?,support,Our support team is available 24/7 for assistance.
-create automation?,automation,We build automation systems to reduce manual work and improve efficiency.
-see you,goodbye,Goodbye! 👋 Thanks for visiting Butt Networks.
-thanks,thanks,You're welcome! 😊 Happy to help.
-what is ai automation,ai_info,AI helps automate tasks using machine learning and intelligent systems.
-what is butt networks,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-mobile apps?,services,"We offer web apps, AI systems, automation tools, and mobile app development."
-support,support,Our support team is available 24/7 for assistance.
-error problem,support,Our support team is available 24/7 for assistance.
-bye,goodbye,Goodbye! 👋 Thanks for visiting Butt Networks.
-see you,goodbye,Goodbye! 👋 Thanks for visiting Butt Networks.
-what do you do,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-web development,services,"We offer web apps, AI systems, automation tools, and mobile app development."
-create automation,automation,We build automation systems to reduce manual work and improve efficiency.
-create automation?,automation,We build automation systems to reduce manual work and improve efficiency.
-pricing,pricing,Our pricing depends on project requirements. Contact us for details.
-thanks,thanks,You're welcome! 😊 Happy to help.
 hello,greeting,Hello! 👋 Welcome to Butt Networks Software House. How can I help you today?
-create automation,automation,We build automation systems to reduce manual work and improve efficiency.
-how does automation work,ai_info,AI helps automate tasks using machine learning and intelligent systems.
-about your software house,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-goodbye?,goodbye,Goodbye! 👋 Thanks for visiting Butt Networks.
-is my data safe?,security,We use secure systems and encryption to protect your data.
-connect apps?,automation,We build automation systems to reduce manual work and improve efficiency.
-goodbye,goodbye,Goodbye! 👋 Thanks for visiting Butt Networks.
-bug issue,support,Our support team is available 24/7 for assistance.
-exit,goodbye,Goodbye! 👋 Thanks for visiting Butt Networks.
-what is ai automation,ai_info,AI helps automate tasks using machine learning and intelligent systems.
-pricing?,pricing,Our pricing depends on project requirements. Contact us for details.
-thank you,thanks,You're welcome! 😊 Happy to help.
-what is butt networks?,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-what is butt networks,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-who are you?,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-connect apps?,automation,We build automation systems to reduce manual work and improve efficiency.
-goodbye,goodbye,Goodbye! 👋 Thanks for visiting Butt Networks.
-what is machine learning,ai_info,AI helps automate tasks using machine learning and intelligent systems.
-what is ai automation,ai_info,AI helps automate tasks using machine learning and intelligent systems.
-bug issue,support,Our support team is available 24/7 for assistance.
-error problem,support,Our support team is available 24/7 for assistance.
-what is butt networks,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-pricing?,pricing,Our pricing depends on project requirements. Contact us for details.
-what is ai automation,ai_info,AI helps automate tasks using machine learning and intelligent systems.
-web development?,services,"We offer web apps, AI systems, automation tools, and mobile app development."
-connect apps?,automation,We build automation systems to reduce manual work and improve efficiency.
-about your software house,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-how are you,greeting,Hello! 👋 Welcome to Butt Networks Software House. How can I help you today?
-tell me about company?,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-error problem,support,Our support team is available 24/7 for assistance.
-what is machine learning,ai_info,AI helps automate tasks using machine learning and intelligent systems.
-web development,services,"We offer web apps, AI systems, automation tools, and mobile app development."
-bug issue,support,Our support team is available 24/7 for assistance.
-connect apps,automation,We build automation systems to reduce manual work and improve efficiency.
-what services do you offer,services,"We offer web apps, AI systems, automation tools, and mobile app development."
-what is ai automation,ai_info,AI helps automate tasks using machine learning and intelligent systems.
-pricing,pricing,Our pricing depends on project requirements. Contact us for details.
-thanks?,thanks,You're welcome! 😊 Happy to help.
-good evening,greeting,Hello! 👋 Welcome to Butt Networks Software House. How can I help you today?
-services,services,"We offer web apps, AI systems, automation tools, and mobile app development."
-what is machine learning,ai_info,AI helps automate tasks using machine learning and intelligent systems.
-thank you,thanks,You're welcome! 😊 Happy to help.
-thank you,thanks,You're welcome! 😊 Happy to help.
-appreciate it,thanks,You're welcome! 😊 Happy to help.
-create automation,automation,We build automation systems to reduce manual work and improve efficiency.
-what is machine learning,ai_info,AI helps automate tasks using machine learning and intelligent systems.
-mobile apps,services,"We offer web apps, AI systems, automation tools, and mobile app development."
-data privacy,security,We use secure systems and encryption to protect your data.
-good morning,greeting,Hello! 👋 Welcome to Butt Networks Software House. How can I help you today?
-who are you?,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-see you?,goodbye,Goodbye! 👋 Thanks for visiting Butt Networks.
-pricing?,pricing,Our pricing depends on project requirements. Contact us for details.
-subscription plans?,pricing,Our pricing depends on project requirements. Contact us for details.
-is my data safe,security,We use secure systems and encryption to protect your data.
-appreciate it,thanks,You're welcome! 😊 Happy to help.
-see you,goodbye,Goodbye! 👋 Thanks for visiting Butt Networks.
-ai services,services,"We offer web apps, AI systems, automation tools, and mobile app development."
-who are you?,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-task automation?,automation,We build automation systems to reduce manual work and improve efficiency.
-pricing,pricing,Our pricing depends on project requirements. Contact us for details.
-exit,goodbye,Goodbye! 👋 Thanks for visiting Butt Networks.
-hello,greeting,Hello! 👋 Welcome to Butt Networks Software House. How can I help you today?
-workflow automation,automation,We build automation systems to reduce manual work and improve efficiency.
-pricing,pricing,Our pricing depends on project requirements. Contact us for details.
-mobile apps,services,"We offer web apps, AI systems, automation tools, and mobile app development."
-exit,goodbye,Goodbye! 👋 Thanks for visiting Butt Networks.
-what is butt networks?,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
+hey,greeting,Hello! 👋 How can I assist you today?
 bye,goodbye,Goodbye! 👋 Thanks for visiting Butt Networks.
-appreciate it?,thanks,You're welcome! 😊 Happy to help.
-technical support,support,Our support team is available 24/7 for assistance.
-task automation,automation,We build automation systems to reduce manual work and improve efficiency.
-pricing?,pricing,Our pricing depends on project requirements. Contact us for details.
-what do you do,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-appreciate it?,thanks,You're welcome! 😊 Happy to help.
-what is ai automation?,ai_info,AI helps automate tasks using machine learning and intelligent systems.
-support?,support,Our support team is available 24/7 for assistance.
-subscription plans?,pricing,Our pricing depends on project requirements. Contact us for details.
-create automation,automation,We build automation systems to reduce manual work and improve efficiency.
-support,support,Our support team is available 24/7 for assistance.
-what is ai automation,ai_info,AI helps automate tasks using machine learning and intelligent systems.
-subscription plans?,pricing,Our pricing depends on project requirements. Contact us for details.
-what is ai automation?,ai_info,AI helps automate tasks using machine learning and intelligent systems.
-bug issue,support,Our support team is available 24/7 for assistance.
-what do you do,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-exit,goodbye,Goodbye! 👋 Thanks for visiting Butt Networks.
-hello,greeting,Hello! 👋 Welcome to Butt Networks Software House. How can I help you today?
-software development,services,"We offer web apps, AI systems, automation tools, and mobile app development."
-hello,greeting,Hello! 👋 Welcome to Butt Networks Software House. How can I help you today?
-free trial,pricing,Our pricing depends on project requirements. Contact us for details.
-support,support,Our support team is available 24/7 for assistance.
+see you,goodbye,Goodbye! 👋 See you next time.
+thanks,thanks,You're welcome! 😊 Happy to help.
 thank you,thanks,You're welcome! 😊 Happy to help.
-how are you,greeting,Hello! 👋 Welcome to Butt Networks Software House. How can I help you today?
-good evening?,greeting,Hello! 👋 Welcome to Butt Networks Software House. How can I help you today?
 subscription plans,pricing,Our pricing depends on project requirements. Contact us for details.
-free trial,pricing,Our pricing depends on project requirements. Contact us for details.
-what do you do,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-bug issue,support,Our support team is available 24/7 for assistance.
-create automation?,automation,We build automation systems to reduce manual work and improve efficiency.
-error problem?,support,Our support team is available 24/7 for assistance.
+what is cost,pricing,Pricing varies depending on features and project scope.
+ai services,services,"We offer AI systems, web development, automation tools, and mobile apps."
+what services do you provide,services,"We provide AI, web apps, automation systems, and software solutions."
+contact,contact,Our Number is 03004907243 and Email is shahnawazsaddamb@gmail.com
+contact opinion nest,contact,You can contact Opinion Nest via email or phone for demos and support.
+is my data safe,security,We use encryption and secure systems to protect your data.
+data privacy,security,We ensure full data protection with secure infrastructure.
+automation workflow,automation,We build automation systems to reduce manual work.
+workflow automation,automation,Automation helps streamline business processes efficiently.
+appreciate it ?,thanks,You're welcome! 😊 Happy to help.
+what do you offer,services,"We offer AI systems, web development, automation tools, and mobile apps."
+reach you  info,contact,Our Number is 03004907243 and Email is shahnawazsaddamb@gmail.com
+cost  info,pricing,Our pricing depends on project requirements. Contact us for details.
+price,pricing,Our pricing depends on project requirements. Contact us for details.
+who are you,about,"Butt Networks is a software house providing AI, web development, automation, and custom software solutions."
+privacy  info,security,We use encryption and secure systems to protect your data.
+phone  info,contact,Our Number is 03004907243 and Email is shahnawazsaddamb@gmail.com
+who are you  please,about,"Opinion Nest provides AI-driven surveys, analytics dashboards, and real-time feedback collection."
+thx,thanks,You're welcome! 😊 Happy to help.
+email ?,contact,You can contact Opinion Nest via email or phone for demos and support.
+ml ?,ai_info,AI helps automate tasks by learning patterns and executing tasks automatically.
+solutions ?,services,"We provide AI, web apps, automation systems, and software solutions."
+ml ?,ai_info,Machine learning enables systems to learn from data and improve over time.
+thank you  please,thanks,You're welcome! 😊 Happy to help.
+automation ai  info,ai_info,Machine learning enables systems to learn from data and improve over time.
+thx  please,thanks,You're welcome! 😊 Happy to help.
+cost,pricing,Pricing varies depending on features and project scope.
+privacy ?,security,We ensure full data protection with secure infrastructure.
+email  please,contact,You can contact Opinion Nest via email or phone for demos and support.
+fee  info,pricing,Pricing varies depending on features and project scope.
+appreciate it  info,thanks,You're welcome! 😊 Happy to help.
 appreciate it,thanks,You're welcome! 😊 Happy to help.
-support,support,Our support team is available 24/7 for assistance.
-create automation,automation,We build automation systems to reduce manual work and improve efficiency.
-appreciate it,thanks,You're welcome! 😊 Happy to help.
-data privacy,security,We use secure systems and encryption to protect your data.
-how does automation work,ai_info,AI helps automate tasks using machine learning and intelligent systems.
-mobile apps,services,"We offer web apps, AI systems, automation tools, and mobile app development."
-task automation,automation,We build automation systems to reduce manual work and improve efficiency.
-how does automation work,ai_info,AI helps automate tasks using machine learning and intelligent systems.
-what is ai automation?,ai_info,AI helps automate tasks using machine learning and intelligent systems.
-hello?,greeting,Hello! 👋 Welcome to Butt Networks Software House. How can I help you today?
-is my data safe,security,We use secure systems and encryption to protect your data.
-data privacy?,security,We use secure systems and encryption to protect your data.
-error problem,support,Our support team is available 24/7 for assistance.
-what is ai automation,ai_info,AI helps automate tasks using machine learning and intelligent systems.
-about your software house?,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-mobile apps,services,"We offer web apps, AI systems, automation tools, and mobile app development."
-good evening?,greeting,Hello! 👋 Welcome to Butt Networks Software House. How can I help you today?
-about your software house?,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-is my data safe,security,We use secure systems and encryption to protect your data.
-is my data safe,security,We use secure systems and encryption to protect your data.
-exit?,goodbye,Goodbye! 👋 Thanks for visiting Butt Networks.
-data privacy,security,We use secure systems and encryption to protect your data.
-how does automation work,ai_info,AI helps automate tasks using machine learning and intelligent systems.
-exit?,goodbye,Goodbye! 👋 Thanks for visiting Butt Networks.
-connect apps,automation,We build automation systems to reduce manual work and improve efficiency.
-create automation,automation,We build automation systems to reduce manual work and improve efficiency.
-subscription plans,pricing,Our pricing depends on project requirements. Contact us for details.
-what services do you offer?,services,"We offer web apps, AI systems, automation tools, and mobile app development."
-technical support?,support,Our support team is available 24/7 for assistance.
-about your software house,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-free trial,pricing,Our pricing depends on project requirements. Contact us for details.
-support?,support,Our support team is available 24/7 for assistance.
-error problem,support,Our support team is available 24/7 for assistance.
-thanks,thanks,You're welcome! 😊 Happy to help.
-hey,greeting,Hello! 👋 Welcome to Butt Networks Software House. How can I help you today?
-error problem?,support,Our support team is available 24/7 for assistance.
-how secure is your software,security,We use secure systems and encryption to protect your data.
-error problem,support,Our support team is available 24/7 for assistance.
-bug issue,support,Our support team is available 24/7 for assistance.
-web development?,services,"We offer web apps, AI systems, automation tools, and mobile app development."
-appreciate it,thanks,You're welcome! 😊 Happy to help.
-support,support,Our support team is available 24/7 for assistance.
-technical support,support,Our support team is available 24/7 for assistance.
-services,services,"We offer web apps, AI systems, automation tools, and mobile app development."
-bug issue?,support,Our support team is available 24/7 for assistance.
-data privacy,security,We use secure systems and encryption to protect your data.
-bug issue,support,Our support team is available 24/7 for assistance.
-workflow automation,automation,We build automation systems to reduce manual work and improve efficiency.
-how are you,greeting,Hello! 👋 Welcome to Butt Networks Software House. How can I help you today?
-pricing,pricing,Our pricing depends on project requirements. Contact us for details.
-hello?,greeting,Hello! 👋 Welcome to Butt Networks Software House. How can I help you today?
-what is ai automation?,ai_info,AI helps automate tasks using machine learning and intelligent systems.
-what is ai automation,ai_info,AI helps automate tasks using machine learning and intelligent systems.
-who are you?,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-is my data safe,security,We use secure systems and encryption to protect your data.
-pricing,pricing,Our pricing depends on project requirements. Contact us for details.
-ai services,services,"We offer web apps, AI systems, automation tools, and mobile app development."
-thank you,thanks,You're welcome! 😊 Happy to help.
-appreciate it,thanks,You're welcome! 😊 Happy to help.
-technical support,support,Our support team is available 24/7 for assistance.
-appreciate it?,thanks,You're welcome! 😊 Happy to help.
-what do you do,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-thank you,thanks,You're welcome! 😊 Happy to help.
-exit,goodbye,Goodbye! 👋 Thanks for visiting Butt Networks.
-who are you,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-good morning,greeting,Hello! 👋 Welcome to Butt Networks Software House. How can I help you today?
-about your software house,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-is my data safe?,security,We use secure systems and encryption to protect your data.
-technical support,support,Our support team is available 24/7 for assistance.
-appreciate it,thanks,You're welcome! 😊 Happy to help.
-data privacy,security,We use secure systems and encryption to protect your data.
-pricing,pricing,Our pricing depends on project requirements. Contact us for details.
-connect apps?,automation,We build automation systems to reduce manual work and improve efficiency.
-is my data safe,security,We use secure systems and encryption to protect your data.
-pricing,pricing,Our pricing depends on project requirements. Contact us for details.
-pricing,pricing,Our pricing depends on project requirements. Contact us for details.
-what is machine learning,ai_info,AI helps automate tasks using machine learning and intelligent systems.
-subscription plans,pricing,Our pricing depends on project requirements. Contact us for details.
-bye?,goodbye,Goodbye! 👋 Thanks for visiting Butt Networks.
-tell me about company,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-is my data safe?,security,We use secure systems and encryption to protect your data.
-is my data safe,security,We use secure systems and encryption to protect your data.
-how secure is your software,security,We use secure systems and encryption to protect your data.
-create automation,automation,We build automation systems to reduce manual work and improve efficiency.
-what is machine learning,ai_info,AI helps automate tasks using machine learning and intelligent systems.
-is my data safe,security,We use secure systems and encryption to protect your data.
-bug issue,support,Our support team is available 24/7 for assistance.
-data privacy,security,We use secure systems and encryption to protect your data.
-create automation,automation,We build automation systems to reduce manual work and improve efficiency.
-what is machine learning,ai_info,AI helps automate tasks using machine learning and intelligent systems.
-goodbye?,goodbye,Goodbye! 👋 Thanks for visiting Butt Networks.
-how does automation work,ai_info,AI helps automate tasks using machine learning and intelligent systems.
-task automation,automation,We build automation systems to reduce manual work and improve efficiency.
-what is machine learning?,ai_info,AI helps automate tasks using machine learning and intelligent systems.
-pricing,pricing,Our pricing depends on project requirements. Contact us for details.
-how are you?,greeting,Hello! 👋 Welcome to Butt Networks Software House. How can I help you today?
-workflow automation,automation,We build automation systems to reduce manual work and improve efficiency.
-see you?,goodbye,Goodbye! 👋 Thanks for visiting Butt Networks.
-how secure is your software,security,We use secure systems and encryption to protect your data.
-thanks,thanks,You're welcome! 😊 Happy to help.
-data privacy,security,We use secure systems and encryption to protect your data.
-services,services,"We offer web apps, AI systems, automation tools, and mobile app development."
-how secure is your software,security,We use secure systems and encryption to protect your data.
-error problem,support,Our support team is available 24/7 for assistance.
-appreciate it,thanks,You're welcome! 😊 Happy to help.
-what services do you offer,services,"We offer web apps, AI systems, automation tools, and mobile app development."
-tell me about company,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-exit?,goodbye,Goodbye! 👋 Thanks for visiting Butt Networks.
-exit,goodbye,Goodbye! 👋 Thanks for visiting Butt Networks.
-data privacy,security,We use secure systems and encryption to protect your data.
-workflow automation,automation,We build automation systems to reduce manual work and improve efficiency.
-how does automation work?,ai_info,AI helps automate tasks using machine learning and intelligent systems.
-workflow automation?,automation,We build automation systems to reduce manual work and improve efficiency.
-what is ai automation,ai_info,AI helps automate tasks using machine learning and intelligent systems.
-services,services,"We offer web apps, AI systems, automation tools, and mobile app development."
-is my data safe,security,We use secure systems and encryption to protect your data.
-workflow automation?,automation,We build automation systems to reduce manual work and improve efficiency.
-task automation,automation,We build automation systems to reduce manual work and improve efficiency.
-tell me about company,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-appreciate it?,thanks,You're welcome! 😊 Happy to help.
-support?,support,Our support team is available 24/7 for assistance.
-ai services?,services,"We offer web apps, AI systems, automation tools, and mobile app development."
-what is butt networks?,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-task automation,automation,We build automation systems to reduce manual work and improve efficiency.
-about your software house,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-bug issue,support,Our support team is available 24/7 for assistance.
-how secure is your software,security,We use secure systems and encryption to protect your data.
-bug issue,support,Our support team is available 24/7 for assistance.
-hello?,greeting,Hello! 👋 Welcome to Butt Networks Software House. How can I help you today?
-appreciate it,thanks,You're welcome! 😊 Happy to help.
-workflow automation?,automation,We build automation systems to reduce manual work and improve efficiency.
-is my data safe,security,We use secure systems and encryption to protect your data.
-create automation,automation,We build automation systems to reduce manual work and improve efficiency.
-how secure is your software,security,We use secure systems and encryption to protect your data.
-subscription plans,pricing,Our pricing depends on project requirements. Contact us for details.
-free trial,pricing,Our pricing depends on project requirements. Contact us for details.
-ai services,services,"We offer web apps, AI systems, automation tools, and mobile app development."
-data privacy,security,We use secure systems and encryption to protect your data.
-bye,goodbye,Goodbye! 👋 Thanks for visiting Butt Networks.
-what do you do,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-pricing,pricing,Our pricing depends on project requirements. Contact us for details.
-bye,goodbye,Goodbye! 👋 Thanks for visiting Butt Networks.
-support?,support,Our support team is available 24/7 for assistance.
-see you,goodbye,Goodbye! 👋 Thanks for visiting Butt Networks.
-how secure is your software?,security,We use secure systems and encryption to protect your data.
-create automation,automation,We build automation systems to reduce manual work and improve efficiency.
-is my data safe,security,We use secure systems and encryption to protect your data.
-what is butt networks?,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-ai services,services,"We offer web apps, AI systems, automation tools, and mobile app development."
-exit,goodbye,Goodbye! 👋 Thanks for visiting Butt Networks.
-what is ai automation,ai_info,AI helps automate tasks using machine learning and intelligent systems.
-tell me about company,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-task automation,automation,We build automation systems to reduce manual work and improve efficiency.
-data privacy?,security,We use secure systems and encryption to protect your data.
-is my data safe?,security,We use secure systems and encryption to protect your data.
-technical support?,support,Our support team is available 24/7 for assistance.
-what do you do,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-free trial,pricing,Our pricing depends on project requirements. Contact us for details.
-hey,greeting,Hello! 👋 Welcome to Butt Networks Software House. How can I help you today?
-appreciate it,thanks,You're welcome! 😊 Happy to help.
-web development,services,"We offer web apps, AI systems, automation tools, and mobile app development."
-subscription plans,pricing,Our pricing depends on project requirements. Contact us for details.
-data privacy?,security,We use secure systems and encryption to protect your data.
-how does automation work,ai_info,AI helps automate tasks using machine learning and intelligent systems.
-what is machine learning,ai_info,AI helps automate tasks using machine learning and intelligent systems.
-free trial,pricing,Our pricing depends on project requirements. Contact us for details.
-error problem?,support,Our support team is available 24/7 for assistance.
-how secure is your software?,security,We use secure systems and encryption to protect your data.
-see you,goodbye,Goodbye! 👋 Thanks for visiting Butt Networks.
-how secure is your software,security,We use secure systems and encryption to protect your data.
-how are you?,greeting,Hello! 👋 Welcome to Butt Networks Software House. How can I help you today?
-technical support,support,Our support team is available 24/7 for assistance.
-data privacy,security,We use secure systems and encryption to protect your data.
-appreciate it,thanks,You're welcome! 😊 Happy to help.
-what do you do,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-free trial,pricing,Our pricing depends on project requirements. Contact us for details.
-bye,goodbye,Goodbye! 👋 Thanks for visiting Butt Networks.
-how does automation work,ai_info,AI helps automate tasks using machine learning and intelligent systems.
-how does automation work,ai_info,AI helps automate tasks using machine learning and intelligent systems.
-support,support,Our support team is available 24/7 for assistance.
-how secure is your software,security,We use secure systems and encryption to protect your data.
-hello,greeting,Hello! 👋 Welcome to Butt Networks Software House. How can I help you today?
-hey,greeting,Hello! 👋 Welcome to Butt Networks Software House. How can I help you today?
-subscription plans?,pricing,Our pricing depends on project requirements. Contact us for details.
-how does automation work,ai_info,AI helps automate tasks using machine learning and intelligent systems.
-appreciate it?,thanks,You're welcome! 😊 Happy to help.
-what services do you offer,services,"We offer web apps, AI systems, automation tools, and mobile app development."
-thanks?,thanks,You're welcome! 😊 Happy to help.
-is my data safe?,security,We use secure systems and encryption to protect your data.
-what is machine learning,ai_info,AI helps automate tasks using machine learning and intelligent systems.
-data privacy,security,We use secure systems and encryption to protect your data.
-data privacy?,security,We use secure systems and encryption to protect your data.
-about your software house,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-thanks,thanks,You're welcome! 😊 Happy to help.
-connect apps,automation,We build automation systems to reduce manual work and improve efficiency.
-what is machine learning,ai_info,AI helps automate tasks using machine learning and intelligent systems.
-tell me about company,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-thanks,thanks,You're welcome! 😊 Happy to help.
-workflow automation,automation,We build automation systems to reduce manual work and improve efficiency.
-workflow automation,automation,We build automation systems to reduce manual work and improve efficiency.
-appreciate it,thanks,You're welcome! 😊 Happy to help.
-create automation,automation,We build automation systems to reduce manual work and improve efficiency.
-how does automation work?,ai_info,AI helps automate tasks using machine learning and intelligent systems.
-thanks?,thanks,You're welcome! 😊 Happy to help.
-what is butt networks,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-how secure is your software,security,We use secure systems and encryption to protect your data.
-services,services,"We offer web apps, AI systems, automation tools, and mobile app development."
-free trial,pricing,Our pricing depends on project requirements. Contact us for details.
-what services do you offer?,services,"We offer web apps, AI systems, automation tools, and mobile app development."
-see you,goodbye,Goodbye! 👋 Thanks for visiting Butt Networks.
-ai services,services,"We offer web apps, AI systems, automation tools, and mobile app development."
-task automation,automation,We build automation systems to reduce manual work and improve efficiency.
-how secure is your software?,security,We use secure systems and encryption to protect your data.
-how does automation work,ai_info,AI helps automate tasks using machine learning and intelligent systems.
-see you,goodbye,Goodbye! 👋 Thanks for visiting Butt Networks.
-support,support,Our support team is available 24/7 for assistance.
-bye,goodbye,Goodbye! 👋 Thanks for visiting Butt Networks.
-free trial,pricing,Our pricing depends on project requirements. Contact us for details.
-thanks,thanks,You're welcome! 😊 Happy to help.
-tell me about company,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-good evening,greeting,Hello! 👋 Welcome to Butt Networks Software House. How can I help you today?
-thank you,thanks,You're welcome! 😊 Happy to help.
-is my data safe,security,We use secure systems and encryption to protect your data.
-support?,support,Our support team is available 24/7 for assistance.
-hello,greeting,Hello! 👋 Welcome to Butt Networks Software House. How can I help you today?
-how secure is your software,security,We use secure systems and encryption to protect your data.
-how does automation work?,ai_info,AI helps automate tasks using machine learning and intelligent systems.
-error problem,support,Our support team is available 24/7 for assistance.
-exit?,goodbye,Goodbye! 👋 Thanks for visiting Butt Networks.
-support,support,Our support team is available 24/7 for assistance.
-thanks,thanks,You're welcome! 😊 Happy to help.
-how are you,greeting,Hello! 👋 Welcome to Butt Networks Software House. How can I help you today?
-what is machine learning,ai_info,AI helps automate tasks using machine learning and intelligent systems.
-what is machine learning,ai_info,AI helps automate tasks using machine learning and intelligent systems.
-free trial,pricing,Our pricing depends on project requirements. Contact us for details.
-good morning,greeting,Hello! 👋 Welcome to Butt Networks Software House. How can I help you today?
-what is ai automation,ai_info,AI helps automate tasks using machine learning and intelligent systems.
-tell me about company,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-hey?,greeting,Hello! 👋 Welcome to Butt Networks Software House. How can I help you today?
-software development?,services,"We offer web apps, AI systems, automation tools, and mobile app development."
-who are you?,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-thank you?,thanks,You're welcome! 😊 Happy to help.
-pricing,pricing,Our pricing depends on project requirements. Contact us for details.
-create automation?,automation,We build automation systems to reduce manual work and improve efficiency.
-see you?,goodbye,Goodbye! 👋 Thanks for visiting Butt Networks.
-what is butt networks?,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-hey?,greeting,Hello! 👋 Welcome to Butt Networks Software House. How can I help you today?
-thanks,thanks,You're welcome! 😊 Happy to help.
-ai services,services,"We offer web apps, AI systems, automation tools, and mobile app development."
-mobile apps,services,"We offer web apps, AI systems, automation tools, and mobile app development."
-bye,goodbye,Goodbye! 👋 Thanks for visiting Butt Networks.
-data privacy,security,We use secure systems and encryption to protect your data.
-bye,goodbye,Goodbye! 👋 Thanks for visiting Butt Networks.
-goodbye,goodbye,Goodbye! 👋 Thanks for visiting Butt Networks.
-see you,goodbye,Goodbye! 👋 Thanks for visiting Butt Networks.
-hello,greeting,Hello! 👋 Welcome to Butt Networks Software House. How can I help you today?
-error problem,support,Our support team is available 24/7 for assistance.
-is my data safe,security,We use secure systems and encryption to protect your data.
-what is butt networks,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-thank you,thanks,You're welcome! 😊 Happy to help.
-ai services,services,"We offer web apps, AI systems, automation tools, and mobile app development."
-bug issue,support,Our support team is available 24/7 for assistance.
-exit,goodbye,Goodbye! 👋 Thanks for visiting Butt Networks.
-who are you?,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-error problem?,support,Our support team is available 24/7 for assistance.
-bug issue,support,Our support team is available 24/7 for assistance.
-error problem,support,Our support team is available 24/7 for assistance.
-subscription plans,pricing,Our pricing depends on project requirements. Contact us for details.
-task automation?,automation,We build automation systems to reduce manual work and improve efficiency.
-how secure is your software,security,We use secure systems and encryption to protect your data.
-what is butt networks,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-what do you do?,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-bye,goodbye,Goodbye! 👋 Thanks for visiting Butt Networks.
-about your software house,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-support,support,Our support team is available 24/7 for assistance.
-thanks,thanks,You're welcome! 😊 Happy to help.
-who are you?,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-mobile apps,services,"We offer web apps, AI systems, automation tools, and mobile app development."
-what is ai automation,ai_info,AI helps automate tasks using machine learning and intelligent systems.
-see you,goodbye,Goodbye! 👋 Thanks for visiting Butt Networks.
-create automation,automation,We build automation systems to reduce manual work and improve efficiency.
-bye,goodbye,Goodbye! 👋 Thanks for visiting Butt Networks.
-hi,greeting,Hello! 👋 Welcome to Butt Networks Software House. How can I help you today?
-task automation,automation,We build automation systems to reduce manual work and improve efficiency.
-hi?,greeting,Hello! 👋 Welcome to Butt Networks Software House. How can I help you today?
-appreciate it,thanks,You're welcome! 😊 Happy to help.
-tell me about company,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-who are you?,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-error problem,support,Our support team is available 24/7 for assistance.
-pricing,pricing,Our pricing depends on project requirements. Contact us for details.
-task automation,automation,We build automation systems to reduce manual work and improve efficiency.
-hi?,greeting,Hello! 👋 Welcome to Butt Networks Software House. How can I help you today?
-thank you,thanks,You're welcome! 😊 Happy to help.
-connect apps,automation,We build automation systems to reduce manual work and improve efficiency.
-is my data safe,security,We use secure systems and encryption to protect your data.
-bug issue?,support,Our support team is available 24/7 for assistance.
-bye,goodbye,Goodbye! 👋 Thanks for visiting Butt Networks.
-support,support,Our support team is available 24/7 for assistance.
-thanks,thanks,You're welcome! 😊 Happy to help.
-hi,greeting,Hello! 👋 Welcome to Butt Networks Software House. How can I help you today?
-thank you,thanks,You're welcome! 😊 Happy to help.
-what is machine learning?,ai_info,AI helps automate tasks using machine learning and intelligent systems.
-ai services,services,"We offer web apps, AI systems, automation tools, and mobile app development."
-pricing,pricing,Our pricing depends on project requirements. Contact us for details.
-is my data safe,security,We use secure systems and encryption to protect your data.
-what services do you offer,services,"We offer web apps, AI systems, automation tools, and mobile app development."
-goodbye,goodbye,Goodbye! 👋 Thanks for visiting Butt Networks.
-about your software house,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-support,support,Our support team is available 24/7 for assistance.
-what do you do,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-thanks,thanks,You're welcome! 😊 Happy to help.
-workflow automation,automation,We build automation systems to reduce manual work and improve efficiency.
-hey?,greeting,Hello! 👋 Welcome to Butt Networks Software House. How can I help you today?
-thanks,thanks,You're welcome! 😊 Happy to help.
-about your software house,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-what is machine learning,ai_info,AI helps automate tasks using machine learning and intelligent systems.
-bye,goodbye,Goodbye! 👋 Thanks for visiting Butt Networks.
-task automation?,automation,We build automation systems to reduce manual work and improve efficiency.
-pricing,pricing,Our pricing depends on project requirements. Contact us for details.
-bye?,goodbye,Goodbye! 👋 Thanks for visiting Butt Networks.
-subscription plans?,pricing,Our pricing depends on project requirements. Contact us for details.
-what is ai automation?,ai_info,AI helps automate tasks using machine learning and intelligent systems.
-create automation?,automation,We build automation systems to reduce manual work and improve efficiency.
-thank you,thanks,You're welcome! 😊 Happy to help.
-mobile apps,services,"We offer web apps, AI systems, automation tools, and mobile app development."
-is my data safe,security,We use secure systems and encryption to protect your data.
-appreciate it,thanks,You're welcome! 😊 Happy to help.
-pricing,pricing,Our pricing depends on project requirements. Contact us for details.
-about your software house,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-task automation,automation,We build automation systems to reduce manual work and improve efficiency.
-free trial,pricing,Our pricing depends on project requirements. Contact us for details.
-connect apps,automation,We build automation systems to reduce manual work and improve efficiency.
-hello,greeting,Hello! 👋 Welcome to Butt Networks Software House. How can I help you today?
-workflow automation,automation,We build automation systems to reduce manual work and improve efficiency.
-appreciate it,thanks,You're welcome! 😊 Happy to help.
-is my data safe,security,We use secure systems and encryption to protect your data.
-is my data safe?,security,We use secure systems and encryption to protect your data.
-free trial,pricing,Our pricing depends on project requirements. Contact us for details.
-goodbye,goodbye,Goodbye! 👋 Thanks for visiting Butt Networks.
-how secure is your software,security,We use secure systems and encryption to protect your data.
-who are you?,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-hi,greeting,Hello! 👋 Welcome to Butt Networks Software House. How can I help you today?
-is my data safe?,security,We use secure systems and encryption to protect your data.
-subscription plans,pricing,Our pricing depends on project requirements. Contact us for details.
-error problem,support,Our support team is available 24/7 for assistance.
-thank you,thanks,You're welcome! 😊 Happy to help.
-what do you do,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-exit,goodbye,Goodbye! 👋 Thanks for visiting Butt Networks.
-create automation,automation,We build automation systems to reduce manual work and improve efficiency.
-who are you?,about,"Butt Networks is a software house providing AI, web development, and custom software solutions."
-subscription plans,pricing,Our pricing depends on project requirements. Contact us for details.
-contact number,contact,Our Number is 03004907243 and Email is shahnawazsaddamb@gmail.com
-contact email,contact,Our Number is 03004907243 and Email is shahnawazsaddamb@gmail.com
-contact info,contact,Our Number is 03004907243 and Email is shahnawazsaddamb@gmail.com
-what is opinion nest,about,"Opinion Nest is an AI-powered feedback and survey platform by Butt Networks that helps businesses collect, analyze, and understand customer opinions in real-time."
-what is opinion-nest?,about,"Opinion Nest is an advanced survey and feedback platform developed by Butt Networks to gather insights, improve decisions, and boost customer satisfaction."
-tell me about opinion nest,about,"Opinion Nest is a smart opinion analysis tool that enables businesses to create surveys, track responses, and gain actionable insights using AI."
-opinion nest platform,services,"Opinion Nest offers survey creation, real-time analytics, sentiment analysis, and reporting tools to help businesses make data-driven decisions."
-features of opinion nest,services,"Opinion Nest includes AI-based sentiment analysis, customizable surveys, dashboards, real-time insights, and detailed reporting features."
-how does opinion nest work,ai_info,"Opinion Nest uses AI and data analytics to collect user feedback, process responses, and generate meaningful insights for better decision-making."
-is opinion nest secure,security,"Opinion Nest uses secure systems, encryption, and privacy-focused architecture to ensure all user data and feedback remain protected."
-opinion nest pricing,pricing,"Opinion Nest pricing depends on features and usage. Contact Butt Networks for customized plans based on your business needs."
-create survey on opinion nest,services,"Opinion Nest allows you to easily create and manage surveys with customizable templates and real-time response tracking."
-opinion nest benefits,services,"Opinion Nest helps businesses understand customer needs, improve services, and make smarter decisions using AI-driven insights."
-opinion nest support,support,"Our support team is available 24/7 to help you with Opinion Nest setup, usage, and troubleshooting."
-connect apps with opinion nest,automation,"Opinion Nest supports integration with multiple apps to automate data collection and streamline workflows."
-ai in opinion nest,ai_info,"Opinion Nest uses AI to analyze customer feedback, detect sentiment, and provide actionable insights automatically."
-opinion nest reviews,about,"Opinion Nest is designed to enhance customer feedback systems by providing accurate insights and improving user experience."
-what does opinion nest do,about,"Opinion Nest helps businesses collect opinions, analyze feedback, and improve services using AI-powered tools."
-contact opinion nest,contact,"You can contact Opinion Nest by Butt Networks via phone at 03004907243 or email at shahnawazsaddamb@gmail.com for support, demos, or business inquiries."
-opinion nest contact,contact,"For inquiries about Opinion Nest, reach Butt Networks at 03004907243 or email shahnawazsaddamb@gmail.com for assistance and collaboration."
-opinion nest support contact,contact,"For technical support or help with Opinion Nest, contact Butt Networks at 03004907243 or email shahnawazsaddamb@gmail.com."
+service  please,services,"We provide AI, web apps, automation systems, and software solutions."
+email ?,contact,Our Number is 03004907243 and Email is shahnawazsaddamb@gmail.com
+process automation  please,automation,We build automation systems to reduce manual work.
+automation  please,automation,Automation helps streamline business processes efficiently.
+thanks  please,thanks,You're welcome! 😊 Happy to help.
+email  please,contact,Our Number is 03004907243 and Email is shahnawazsaddamb@gmail.com
+what is this ?,about,"Opinion Nest provides AI-driven surveys, analytics dashboards, and real-time feedback collection."
+offerings  please,services,"We offer AI systems, web development, automation tools, and mobile apps."
+email  info,contact,Our Number is 03004907243 and Email is shahnawazsaddamb@gmail.com
+ai  info,ai_info,AI helps automate tasks using machine learning and intelligent systems.
+ml  please,ai_info,AI helps automate tasks using machine learning and intelligent systems.
+contact  info,contact,You can contact Opinion Nest via email or phone for demos and support.
+service,services,"We offer AI systems, web development, automation tools, and mobile apps."
+appreciate it  info,thanks,You're welcome! 😊 Happy to help.
+machine learning  please,ai_info,AI helps automate tasks using machine learning and intelligent systems.
+thx  info,thanks,You're welcome! 😊 Happy to help.
+email  please,contact,You can contact Opinion Nest via email or phone for demos and support.
+what is this  please,about,"Opinion Nest provides AI-driven surveys, analytics dashboards, and real-time feedback collection."
+ai,ai_info,AI helps automate tasks by learning patterns and executing tasks automatically.
+what is this  info,about,Opinion Nest is an AI-powered feedback and survey platform by Butt Networks that helps businesses collect and analyze customer opinions in real-time.
+process automation,automation,Automation helps streamline business processes efficiently.
+thanks ?,thanks,You're welcome! 😊 Happy to help.
+who are you  please,about,"Butt Networks is a software house providing AI, web development, automation, and custom software solutions."
+offerings ?,services,"We provide AI, web apps, automation systems, and software solutions."
+automation  info,automation,Automation helps streamline business processes efficiently.
+machine learning  please,ai_info,Machine learning enables systems to learn from data and improve over time.
+who are you  please,about,Opinion Nest is an AI-powered feedback and survey platform by Butt Networks that helps businesses collect and analyze customer opinions in real-time.
+machine learning ?,ai_info,AI helps automate tasks using machine learning and intelligent systems.
+automation ai  info,ai_info,Machine learning enables systems to learn from data and improve over time.
+who are you  info,about,"Butt Networks is a software house providing AI, web development, automation, and custom software solutions."
+reach you  please,contact,Our Number is 03004907243 and Email is shahnawazsaddamb@gmail.com
+phone  info,contact,You can contact Opinion Nest via email or phone for demos and support.
+automation  please,automation,Automation helps streamline business processes efficiently.
+contact ?,contact,Our Number is 03004907243 and Email is shahnawazsaddamb@gmail.com
+security  please,security,We use encryption and secure systems to protect your data.
+automation ai  info,ai_info,Machine learning enables systems to learn from data and improve over time.
+thank you ?,thanks,You're welcome! 😊 Happy to help.
+machine learning  please,ai_info,AI helps automate tasks using machine learning and intelligent systems.
+process automation ?,automation,We build automation systems to reduce manual work.
+machine learning  info,ai_info,Machine learning enables systems to learn from data and improve over time.
+who are you ?,about,"Opinion Nest provides AI-driven surveys, analytics dashboards, and real-time feedback collection."
+offerings  please,services,"We provide AI, web apps, automation systems, and software solutions."
+company info,about,"Opinion Nest provides AI-driven surveys, analytics dashboards, and real-time feedback collection."
+ml  info,ai_info,AI helps automate tasks using machine learning and intelligent systems.
+appreciate it  please,thanks,You're welcome! 😊 Happy to help.
+automation ?,automation,Automation helps streamline business processes efficiently.
+company info  please,about,"Opinion Nest provides AI-driven surveys, analytics dashboards, and real-time feedback collection."
+thx ?,thanks,You're welcome! 😊 Happy to help.
+plans  info,pricing,Pricing varies depending on features and project scope.
+machine learning  info,ai_info,Machine learning enables systems to learn from data and improve over time.
+ml,ai_info,AI helps automate tasks using machine learning and intelligent systems.
+process automation,automation,We build automation systems to reduce manual work.
+privacy  info,security,We use encryption and secure systems to protect your data.
+automation  please,automation,Automation helps streamline business processes efficiently.

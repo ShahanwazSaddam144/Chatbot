@@ -1,13 +1,12 @@
-from fastapi import FastAPI
-from pydantic import BaseModel
-from sklearn.linear_model import LogisticRegression
-from sklearn.feature_extraction.text import TfidfVectorizer
+from fastapi import FastAPI, Request
+from fastapi.middleware.cors import CORSMiddleware
 import pandas as pd
 import random
 import re
 import numpy as np
-from fastapi.middleware.cors import CORSMiddleware
-import time
+import os
+from sklearn.linear_model import LogisticRegression
+from sklearn.feature_extraction.text import TfidfVectorizer
 
 app = FastAPI()
 
@@ -19,27 +18,19 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-@app.middleware("http")
-async def log_requests(request, call_next):
-    start_time = time.time()
-    response = await call_next(request)
-    process_time = time.time() - start_time
-    print(f"{request.method} {request.url.path} - {process_time:.4f}s")
-    return response
+file_path = "ai_chatbot.csv"
 
-data = pd.read_csv("ai_chatbot.csv")
+data = pd.read_csv(file_path)
 
 def clean(text):
-    text = text.lower().strip()
-    text = re.sub(r"[^a-z0-9 ]", "", text)
-    return text
+    return re.sub(r"[^a-z0-9 ]", "", str(text).lower().strip())
 
 data["message"] = data["message"].apply(clean)
 
 X = data["message"]
 Y = data["intent"]
 
-vectorizer = TfidfVectorizer(ngram_range=(1, 2), min_df=1)
+vectorizer = TfidfVectorizer(ngram_range=(1,2))
 X_vec = vectorizer.fit_transform(X)
 
 model = LogisticRegression(max_iter=1000)
@@ -51,107 +42,123 @@ for _, row in data.iterrows():
     response_dict.setdefault(row["intent"], []).append(row["response"])
 
 intent_keywords = {
-    "pricing": ["price", "pricing", "cost", "plan", "subscription", "fee"],
-    "services": ["service", "offer", "provide", "web", "app"],
-    "ai_info": ["ai", "machine learning", "automation", "ml"],
-    "about": ["who", "what is", "about", "company", "software house"],
-    "greeting": ["hi", "hello", "hey", "good morning", "good evening"],
-    "goodbye": ["bye", "exit", "see you", "goodbye"],
-    "support": ["support", "help", "error", "bug", "issue"],
-    "security": ["safe", "security", "privacy", "data"],
-    "automation": ["automation", "workflow", "connect", "task"],
-    "contact": ["contact", "info", "email", "number"]
+    "greeting": ["hi","hello","hey"],
+    "goodbye": ["bye","exit","quit"],
+    "thanks": ["thanks","thank you"],
+    "pricing": ["price","cost","subscription","fee"],
+    "services": ["service","offer","provide"],
+    "ai_info": ["ai","machine learning","automation","ml"],
+    "about": ["who","what is","about"],
+    "contact": ["contact","email","number"]
 }
 
-entities = {
-    "butt networks": "butt_networks",
-    "opinion nest": "opinion_nest",
-    "opinion-nest": "opinion_nest"
-}
-
-def clean_input(text):
-    return clean(text)
-
-def detect_keywords(text):
-    found = []
+def detect_keyword_intent(text):
+    matched = []
     for intent, keys in intent_keywords.items():
         for k in keys:
             if k in text:
-                found.append(intent)
+                matched.append(intent)
                 break
-    return found
+    return matched
 
-def extract_entity(text):
-    text = text.lower()
-    for name, entity in entities.items():
-        if name in text:
-            return entity
-    return None
+def save_new_data(message, intent, response):
+    df = pd.read_csv(file_path)
+    new_row = pd.DataFrame([[message, intent, response]], columns=["message","intent","response"])
+    df = pd.concat([df, new_row], ignore_index=True)
+    df.to_csv(file_path, index=False)
+
+def retrain():
+    global data, X, Y, vectorizer, model, response_dict
+
+    data = pd.read_csv(file_path)
+    data["message"] = data["message"].apply(clean)
+
+    X = data["message"]
+    Y = data["intent"]
+
+    vectorizer = TfidfVectorizer(ngram_range=(1,2))
+    X_vec = vectorizer.fit_transform(X)
+
+    model = LogisticRegression(max_iter=1000)
+    model.fit(X_vec, Y)
+
+    response_dict = {}
+    for _, row in data.iterrows():
+        response_dict.setdefault(row["intent"], []).append(row["response"])
 
 def predict(text):
-    text = clean_input(text)
+    text = clean(text)
 
-    entity = extract_entity(text)
+    kw = detect_keyword_intent(text)
 
-    if entity:
-        if "what" in text or "tell" in text or "about" in text:
-            intent = f"about_{entity}"
-            if intent in response_dict:
-                return random.choice(response_dict[intent]), 0.95
+    if len(kw) == 1:
+        intent = kw[0]
+        if intent in response_dict:
+            return random.choice(response_dict[intent]), 1.0, intent
+
+    if len(kw) > 1:
+        replies = []
+        for i in kw:
+            if i in response_dict:
+                replies.append(random.choice(response_dict[i]))
+        return " | ".join(replies), 1.0, "multi"
 
     vec = vectorizer.transform([text])
     probs = model.predict_proba(vec)[0]
-    top_idx = np.argsort(probs)[::-1]
+    idx = np.argmax(probs)
 
-    ml_intents = []
-    for i in top_idx[:3]:
-        if probs[i] > 0.25:
-            ml_intents.append((model.classes_[i], float(probs[i])))
+    intent = model.classes_[idx]
+    conf = probs[idx]
 
-    keyword_intents = detect_keywords(text)
+    if intent in response_dict:
+        return random.choice(response_dict[intent]), conf, intent
 
-    score_map = {}
+    return None, conf, "unknown"
 
-    for intent, score in ml_intents:
-        score_map[intent] = score_map.get(intent, 0) + score
 
-    for ki in keyword_intents:
-        score_map[ki] = score_map.get(ki, 0) + 0.65
+@app.middleware("http")
+async def log_requests(request: Request, call_next):
+    response = await call_next(request)
+    return response
 
-    if not score_map:
-        return None, 0.0
 
-    sorted_intents = sorted(score_map.items(), key=lambda x: x[1], reverse=True)
+@app.get("/")
+def home():
+    return {"message": "Chatbot API is running"}
 
-    best_intent, best_score = sorted_intents[0]
-
-    replies = []
-
-    for intent, score in sorted_intents[:2]:
-        if intent in response_dict:
-            replies.append(random.choice(response_dict[intent]))
-
-    return " | ".join(replies), best_score
-
-def fallback_response(text):
-    return f"I understand you're asking about '{text}', but I don't have enough specific training data for this. Can you rephrase or provide more details?"
-
-class Request(BaseModel):
-    message: str
 
 @app.post("/chat")
-def chat(req: Request):
-    reply, conf = predict(req.message)
+def chat(request: dict):
+    user_input = request.get("message")
 
-    if reply is None or conf < 0.45:
+    reply, conf, intent = predict(user_input)
+
+    if reply is None:
+        reply = "I don't know this. Please teach me."
         return {
-            "response": fallback_response(req.message),
-            "confidence": round(conf, 2),
-            "mode": "fallback"
+            "reply": reply,
+            "intent": intent,
+            "confidence": float(conf),
+            "learning": False
         }
 
     return {
-        "response": reply,
-        "confidence": round(conf, 2),
-        "mode": "ml"
+        "reply": reply,
+        "intent": intent,
+        "confidence": float(conf),
+        "learning": True
+    }
+
+
+@app.post("/teach")
+def teach(request: dict):
+    message = clean(request.get("message"))
+    intent = request.get("intent")
+    response = request.get("response")
+
+    save_new_data(message, intent, response)
+    retrain()
+
+    return {
+        "message": "Learned successfully"
     }
